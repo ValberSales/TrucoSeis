@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Truco Seis</string>
+    <string name="historico_de_vitorias">Histórico de Vitórias</string>
+    <string name="nos">Nós:</string>
+    <string name="eles">Eles:</string>
+    <string name="zero">0</string>
+    <string name="voltar">Voltar</string>
+    <string name="plus1">+1</string>
+    <string name="plus3">+3</string>
+    <string name="plus6">+6</string>
+    <string name="plus9">+9</string>
+    <string name="plus12">+12</string>
+    <string name="zerar_historico">Zerar Histórico</string>
+</resources>

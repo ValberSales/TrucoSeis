@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nos"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        android:id="@+id/tvNos"
+        android:padding="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tvEles"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/eles"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        android:id="@+id/tvEles"
+        android:padding="16dp"
+        app:layout_constraintStart_toEndOf="@id/tvNos"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/zero"
+        android:textAlignment="center"
+        android:id="@+id/tvPlacarNos"
+        android:padding="16dp"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvNos"
+        app:layout_constraintEnd_toStartOf="@id/tvPlacarEles"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/zero"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:id="@+id/tvPlacarEles"
+        android:padding="16dp"
+        app:layout_constraintStart_toEndOf="@id/tvPlacarNos"
+        app:layout_constraintTop_toBottomOf="@id/tvEles"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:id="@+id/btnPlusOneNos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="@string/plus1"
+        app:layout_constraintEnd_toStartOf="@id/btnPlusOneEles"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvPlacarNos"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/plus1"
+        android:id="@+id/btnPlusOneEles"
+        android:layout_margin="16dp"
+        app:layout_constraintTop_toBottomOf="@id/tvPlacarEles"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btnPlusOneNos"/>
+
+    <Button
+        android:id="@+id/btnPlusThreeNos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="@string/plus3"
+        app:layout_constraintEnd_toStartOf="@id/btnPlusThreeEles"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnPlusOneNos"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/plus3"
+        android:id="@+id/btnPlusThreeEles"
+        android:layout_margin="16dp"
+        app:layout_constraintTop_toBottomOf="@id/btnPlusOneEles"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btnPlusThreeNos"/>
+
+
+    <Button
+        android:id="@+id/btnPlusSixNos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="@string/plus6"
+        app:layout_constraintEnd_toStartOf="@id/btnPlusSixEles"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnPlusThreeNos"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/plus6"
+        android:id="@+id/btnPlusSixEles"
+        android:layout_margin="16dp"
+        app:layout_constraintTop_toBottomOf="@id/btnPlusThreeEles"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btnPlusSixNos"/>
+
+
+    <Button
+        android:id="@+id/btnPlusNineNos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="@string/plus9"
+        app:layout_constraintEnd_toStartOf="@id/btnPlusNineEles"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnPlusSixNos"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/plus9"
+        android:id="@+id/btnPlusNineEles"
+        android:layout_margin="16dp"
+        app:layout_constraintTop_toBottomOf="@id/btnPlusSixEles"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btnPlusNineNos"/>
+
+    <Button
+        android:id="@+id/btnPlusTwelveNos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="@string/plus12"
+        app:layout_constraintEnd_toStartOf="@id/btnPlusTwelveEles"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnPlusNineNos"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/plus12"
+        android:id="@+id/btnPlusTwelveEles"
+        android:layout_margin="16dp"
+        app:layout_constraintTop_toBottomOf="@id/btnPlusNineEles"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btnPlusTwelveNos"/>
+
+    <Button
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:text="@string/historico_de_vitorias"
+        android:id="@+id/btnHistorico"
+        android:layout_margin="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnPlusTwelveEles"/>
+
+    <Button
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:text="@string/zerar_historico"
+        android:id="@+id/btnZerarHistorico"
+        android:layout_margin="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnHistorico"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

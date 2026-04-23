@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HistoricoActivity">
+
+    <TextView
+        android:id="@+id/tvHistorico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="@string/historico_de_vitorias"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvHistNos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="@string/nos"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@id/tvHistEles"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvHistorico" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/eles"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        android:id="@+id/tvHistEles"
+        android:padding="16dp"
+        app:layout_constraintStart_toEndOf="@id/tvHistNos"
+        app:layout_constraintTop_toBottomOf="@id/tvHistorico"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/zero"
+        android:textAlignment="center"
+        android:id="@+id/tvVitoriaNos"
+        android:padding="16dp"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvHistNos"
+        app:layout_constraintEnd_toStartOf="@id/tvVitoriaEles"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/zero"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:id="@+id/tvVitoriaEles"
+        android:padding="16dp"
+        app:layout_constraintStart_toEndOf="@id/tvVitoriaNos"
+        app:layout_constraintTop_toBottomOf="@id/tvHistEles"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnVoltar"
+        android:text="@string/voltar"
+        android:layout_margin="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
