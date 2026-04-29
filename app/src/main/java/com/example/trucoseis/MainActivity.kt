@@ -103,7 +103,10 @@ class MainActivity : AppCompatActivity() {
         val btnZerarHistorico = findViewById<Button>(R.id.btnZerarHistorico)
         btnZerarHistorico.setOnClickListener {
             limparVitorias()
-            verificarVencedor()
+            limparPontos()
+            atualizarPlacar()
+            Toast.makeText(this, "Pontuação e histórico zerados", Toast.LENGTH_SHORT).show()
+
         }
     }
 
